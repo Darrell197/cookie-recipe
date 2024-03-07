@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,20 +18,20 @@
         
         /* Top bar styles */
         header {
-            background-color: #0056b3; /* Dark blue */
+            background-color: #b30021; /* Dark blue */
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 10px; /* Changed padding */
+            text-align: left;
             position: fixed;
             top: 0;
             width: 100%;
-            z-index: 9999; /* Ensure it's on top of other content */
         }
         
         nav ul {
             list-style-type: none;
             margin: 0;
-            padding: 0;
+            padding: 0; /* Removed padding */
+            text-align: right;
         }
         
         nav ul li {
@@ -45,7 +46,7 @@
         
         /* Main content styles */
         main {
-            padding-top: 80px; /* Adjust to push content below the top bar */
+            padding-top: 60px; /* Adjusted padding */
         }
         
         /* Recipe styles */
@@ -138,15 +139,17 @@
 <body>
     <!-- Top bar -->
     <header>
-        <h1>Delicious Recipes</h1>
-        <nav>
-            <ul>
-                <li><a type="button" class="btn btn-secondary">Secondary</button></a></li>
-                <li><button type="button" class="btn btn-outline-warning">Warning</button></a></li>
-                <li><button type="button" class="btn btn-outline-light">Light</button></a></li>
-                <li><button type="button" class="btn btn-outline-primary">Primary</button></a></li>
-            </ul>
-        </nav>
+        <div class="container"> <!-- Added container for alignment -->
+            <h1 class="float-start">Delicious Recipes</h1> <!-- Changed alignment -->
+            <nav class="float-end"> <!-- Changed alignment -->
+                <ul>
+                    <li><a type="button" class="btn btn-secondary">Secondary</a></li> <!-- Corrected button closing tag -->
+                    <li><a type="button" class="btn btn-outline-warning">Warning</a></li> <!-- Corrected button closing tag -->
+                    <li><a type="button" class="btn btn-outline-light">Light</a></li> <!-- Corrected button closing tag -->
+                    <li><a type="button" class="btn btn-outline-primary">Primary</a></li> <!-- Corrected button closing tag -->
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main content -->
@@ -193,33 +196,46 @@
             <div class="fun-fact">
                 <h2>HAPPY BAKING PEOPLE:</h2>
                 <p>Why did the muffin break up with the cupcake?</p>
-                <p>Because it was tired of being pushed around
-                    <table class="table table-striped">
-                            <tr>
-                                <th>Ingredient</th>
-                                <th>Property 1</th>
-                                <th>Property 2</th>
-                                <th>Property 3</th>
-                            </tr>
-                        <tbody>
-                            <tr>
-                                <td>Custard</td>
-                                <td>Railguns</td>
-                                <td>More jammyness</td>
-                                <td>Happyfaces</td>
-                            </tr>
-                            <tr>
-                                <td>Jammy</td>
-                                <td></td>
-                                <td></td>
-                                <td>More vodka</td>
-                            </tr>
-                            <tr>
-                                <td>Flour</td>
-                                <td></td>
-                                <td></td>
-                                <td>767676767</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                   
+                <p>Because it was tired of being pushed around.</p>
+            </div>
+        </div>
+        
+        <!-- Table -->
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Property 1</th>
+                        <th>Property 2</th>
+                        <th>Property 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Custard</td>
+                        <td>Railguns</td>
+                        <td>More jammyness</td>
+                        <td>Happyfaces</td>
+                    </tr>
+                    <tr>
+                        <td>Jammy</td>
+                        <td></td>
+                        <td></td>
+                        <td>More vodka</td>
+                    </tr>
+                    <tr>
+                        <td>Flour</td>
+                        <td></td>
+                        <td></td>
+                        <td>767676767</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
