@@ -1,0 +1,146 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Top bar styles */
+        header {
+            background-color: #b30021; /* Dark blue */
+            color:turquoise;
+            padding: -1px; /* Changed padding */
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0; /* Removed padding */
+            text-align: right;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Main content styles */
+        main {
+            padding-top: 60px; /* Adjusted padding */
+        }
+        
+        /* Recipe styles */
+        .recipe {
+            background-color: #f0f0f0; /* Light gray */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .recipe1 {
+            
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+            min-height: 100%;
+        }
+        
+        .recipe img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .lemon-muffin-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1px;
+            
+        }
+        
+        .recipe h2 {
+            color: #0056b3; /* Dark blue */
+        }
+        
+        .recipe h3 {
+            color: #0056b3; /* Dark blue */
+            margin-top: 20px;
+        }
+        
+        .recipe ul,
+        .recipe ol {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Fun fact styles */
+        .fun-fact {
+            background-color: #0056b3; /* Dark blue */
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Image styles */
+        .image-container {
+            margin-bottom: 20px;
+        }
+        
+        /* Bootstrap Example styles */
+        .bootstrap-example {
+            background-color: #0056b3; /* Dark blue */
+            color:blue;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #0056b3; /* Dark blue */
+            color: rgb(255, 255, 255);
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray */
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #0056b3; /* Dark blue */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
